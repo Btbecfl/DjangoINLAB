@@ -8,6 +8,3 @@ def home(request):
     b = random.randint(1, 100)
     c = a + b
     return render(request, template_name='home/home.html', context={'a': a, 'b': b, 'c': c})
-
-def home2(request):
-    return render(request, template_name='home/home2.html')
